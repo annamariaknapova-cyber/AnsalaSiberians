@@ -107,8 +107,8 @@
           </div>
         </div>
 
-        <!-- Malý stats badge — zmeň čísla podľa reality -->
-        <div class="hero__stat-badge">
+        <!-- Malý stats badge — skrytý na mobile, viditeľný na desktop -->
+        <div class="hero__stat-badge hero__stat-badge--desktop">
           <strong>10+</strong>
           <span>rokov chovu</span>
         </div>
@@ -237,8 +237,8 @@
     ===== -->
     <div class="dog-profile">
 
-      <!-- Fotografia -->
-      <div class="dog-profile__photo">
+      <!-- Fotografia — kruhová -->
+      <div class="dog-profile__photo dog-profile__photo--circle">
         <!-- <img src="images/aurora.jpg" alt="Aurora of Ansala Siberians" /> -->
         <div class="dog-profile__photo-placeholder">🐕</div>
       </div>
@@ -303,7 +303,7 @@
     <!-- ===== PROFIL PSA #2 — PES ===== -->
     <div class="dog-profile">
 
-      <div class="dog-profile__photo">
+      <div class="dog-profile__photo dog-profile__photo--circle">
         <!-- <img src="images/thor.jpg" alt="Thor of Ansala Siberians" /> -->
         <div class="dog-profile__photo-placeholder">🐕</div>
       </div>
@@ -807,17 +807,7 @@
 
     </div>
 
-    <!-- Mapa — nahraď Google Maps embed linkom -->
-    <div class="map-placeholder">
-      <!-- Ako vložiť mapu:
-           1. Choď na maps.google.com
-           2. Nájdi svoju polohu
-           3. Klikni Zdieľať → Vložiť mapu
-           4. Skopíruj <iframe> kód a vlož ho sem (odmaž tento placeholder div)
-      -->
-      <span style="font-size:2.5rem;opacity:0.4;">🗺️</span>
-      <p style="color:var(--color-text-muted);font-size:0.9rem;">Tu bude vložená mapa (Google Maps embed)</p>
-    </div>
+    <!-- Mapa odstránená — môžeš ju pridať späť vložením Google Maps iframe sem -->
 
   </div>
 </section>
