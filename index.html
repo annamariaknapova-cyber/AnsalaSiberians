@@ -975,7 +975,15 @@
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
+    function togglePedigree(btn) {
+  const panel = btn.nextElementSibling;
+  const isOpen = panel.classList.contains('open');
+  panel.classList.toggle('open', !isOpen);
+  btn.classList.toggle('open', !isOpen);
+  btn.childNodes[2].textContent = isOpen ? ' Zobraziť rodokmeň' : ' Skryť rodokmeň';
+}
 </script>
+
 
 </body>
 </html>
