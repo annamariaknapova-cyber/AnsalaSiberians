@@ -146,7 +146,7 @@
         </p>
         <p>
           Naše psy sa zúčastňujú výstav, canicrossových pretekov 
-          pretože husky potrebuje pohyb a zmysluplnú aktivitu. 
+          pretože husky potrebuje zmysluplnú aktivitu. 
           Každý pes je zdravotne testovaný a má overený rodokmeň.
         </p>
       </div>
@@ -242,6 +242,58 @@
         <h3 class="dog-profile__name">Aurora</h3>
         <!-- Plné chovateľské meno -->
         <p class="dog-profile__kennel">Aurora of Ansala Siberians</p>
+        <button class="pedigree-toggle" onclick="togglePedigree(this)">
+  🧬 Zobraziť rodokmeň
+  <span class="pedigree-toggle__arrow">▾</span>
+</button>
+
+<div class="pedigree-panel">
+  <div class="pedigree-tree">
+
+    <div class="pedigree-col">
+      <div class="pedigree-node pedigree-node--self">
+        <span class="pedigree-node__label">Pes</span>
+        <strong>Aurora</strong>
+        <span class="pedigree-node__kennel">of Ansala Siberians</span>
+      </div>
+    </div>
+
+    <div class="pedigree-connector"></div>
+
+    <div class="pedigree-col">
+      <div class="pedigree-node pedigree-node--sire">
+        <span class="pedigree-node__label">Otec</span>
+        <strong>ICh Blizzard's Arctic Storm</strong>
+      </div>
+      <div class="pedigree-node pedigree-node--dam">
+        <span class="pedigree-node__label">Matka</span>
+        <strong>Ch Luna of Northern Lights</strong>
+      </div>
+    </div>
+
+    <div class="pedigree-connector"></div>
+
+    <div class="pedigree-col">
+      <div class="pedigree-node pedigree-node--grandparent">
+        <span class="pedigree-node__label">Otec otca</span>
+        <strong>Ch Arctic Wind's Thunder</strong>
+      </div>
+      <div class="pedigree-node pedigree-node--grandparent">
+        <span class="pedigree-node__label">Matka otca</span>
+        <strong>Ch Snowfall's Silver Mist</strong>
+      </div>
+      <div class="pedigree-node pedigree-node--grandparent">
+        <span class="pedigree-node__label">Otec matky</span>
+        <strong>ICh Northern Star's Kodiak</strong>
+      </div>
+      <div class="pedigree-node pedigree-node--grandparent">
+        <span class="pedigree-node__label">Matka matky</span>
+        <strong>Ch Crystal Lake's Aurora</strong>
+      </div>
+    </div>
+
+  </div>
+</div>
 
         <!-- Tituly a zdravotné testy (pridávaj/odstraňuj tagy) -->
         <div class="dog-profile__titles">
