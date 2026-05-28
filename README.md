@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/28338482/README.md)
 # Ansala Siberians — Sprievodca úpravou webu
 
 ## Štruktúra súborov
