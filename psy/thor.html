@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thor — Ansala Siberians</title>
+  <meta name="description" content="Thor of Ansala Siberians — Medzinárodný šampión, Sibírsky husky." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo">Ansala <span>Siberians</span></a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="../o-nas.html"     class="navbar__link">O nás</a></li>
+        <li><a href="../nase-psy.html"  class="navbar__link navbar__link--active">Naše psy</a></li>
+        <li><a href="../steniatka.html" class="navbar__link">Šteniatka</a></li>
+        <li><a href="../novinky.html"   class="navbar__link">Novinky</a></li>
+        <li><a href="../index.html#faq"     class="navbar__link">FAQ</a></li>
+        <li><a href="../index.html#kontakt" class="navbar__link">Kontakt</a></li>
+        <li class="lang-switcher">
+          <span class="lang-btn active">SK</span>
+          <a href="../en/psy/thor.html" class="lang-btn">EN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Breadcrumb -->
+<div style="background:var(--color-white);border-bottom:1px solid var(--color-border);padding:0.75rem 0;">
+  <div class="container" style="font-size:0.82rem;color:var(--color-text-muted);">
+    <a href="../index.html" style="color:var(--color-text-muted);">Domov</a> →
+    <a href="../nase-psy.html" style="color:var(--color-text-muted);">Naše psy</a> →
+    <span style="color:var(--color-text);">Thor</span>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Naše psy</span>
+    <h1>Thor</h1>
+    <p class="lead">Thor of Ansala Siberians — Medzinárodný šampión</p>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="dog-profile">
+
+      <div class="dog-profile__photo dog-profile__photo--circle">
+        <!-- <img src="../images/thor.jpg" alt="Thor of Ansala Siberians" /> -->
+        <div class="dog-profile__photo-placeholder">🐕</div>
+      </div>
+
+      <div class="dog-profile__info">
+        <h3 class="dog-profile__name">Thor</h3>
+        <p class="dog-profile__kennel">Thor of Ansala Siberians</p>
+
+        <div class="dog-profile__titles">
+          <span class="tag tag--title">ICh</span>
+          <span class="tag tag--title">Ch SK</span>
+          <span class="tag tag--title">Ch PL</span>
+          <span class="tag tag--title">Ch AT</span>
+          <span class="tag tag--health">DM: Clear</span>
+          <span class="tag tag--health">HC: Clear</span>
+          <span class="tag tag--health">PRA: Clear</span>
+          <span class="tag tag--health">OFA Hips: Excellent</span>
+        </div>
+
+        <div class="dog-profile__details">
+          <div class="detail-row">
+            <span class="detail-row__label">Dátum narodenia</span>
+            <span class="detail-row__value">2. 7. 2018</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-row__label">Pohlavie</span>
+            <span class="detail-row__value">Pes</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-row__label">Farba srsti</span>
+            <span class="detail-row__value">Sivobiela (wolf grey)</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-row__label">Farba očí</span>
+            <span class="detail-row__value">Modré</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-row__label">Otec</span>
+            <span class="detail-row__value">ICh Kodiak's Northern Dream</span>
+          </div>
+          <div class="detail-row">
+            <span class="detail-row__label">Matka</span>
+            <span class="detail-row__value">Ch Stargazer's Milky Way</span>
+          </div>
+        </div>
+
+        <!-- POPIS — uprav podľa potreby, pridaj koľko textu chceš -->
+        <h4 style="font-family:var(--font-display);margin:1.5rem 0 0.75rem;">O Thorovi</h4>
+        <p>
+          Thor je impozantný výstavný pes s typickým severanským výzorom a výnimočne 
+          vyváženou povahou. Doma je pokojný a poslušný, v prírode nevyčerpateľný.
+        </p>
+        <p>
+          <!-- PRIDAJ VLASTNÝ TEXT -->
+          Medzinárodný šampión s výsledkami z ôsmich krajín. Jeho najväčší výsledok 
+          prišiel v roku 2025, keď získal titul Best in Show na medzinárodnej výstave 
+          v Bratislave.
+        </p>
+
+        <!-- Rodokmeň -->
+        <button class="pedigree-toggle" onclick="togglePedigree(this)">
+          🧬 Zobraziť rodokmeň
+          <span class="pedigree-toggle__arrow">▾</span>
+        </button>
+
+        <div class="pedigree-panel">
+          <div class="pedigree-tree">
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--self">
+                <span class="pedigree-node__label">Pes</span>
+                <strong>Thor</strong>
+                <span class="pedigree-node__kennel">of Ansala Siberians</span>
+              </div>
+            </div>
+            <div class="pedigree-connector"></div>
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--sire">
+                <span class="pedigree-node__label">Otec</span>
+                <strong>ICh Kodiak's Northern Dream</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--dam">
+                <span class="pedigree-node__label">Matka</span>
+                <strong>Ch Stargazer's Milky Way</strong>
+              </div>
+            </div>
+            <div class="pedigree-connector"></div>
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Otec otca</span>
+                <strong>Ch Kodiak's Storm Rider</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Matka otca</span>
+                <strong>Ch Northern Winds Athena</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Otec matky</span>
+                <strong>ICh Stargazer's Orion</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Matka matky</span>
+                <strong>Ch Silver Moon's Galaxy</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div style="margin-top:2rem;">
+      <a href="../nase-psy.html" class="btn btn--outline">← Späť na všetky psy</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Ansala <span>Siberians</span></div>
+        <p class="footer__desc">Profesionálna chovateľská stanica Sibírskeho husky na Slovensku.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Stránky</div>
+        <ul class="footer__links">
+          <li><a href="../o-nas.html">O nás</a></li>
+          <li><a href="../nase-psy.html">Naše psy</a></li>
+          <li><a href="../steniatka.html">Šteniatka</a></li>
+          <li><a href="../novinky.html">Novinky</a></li>
+          <li><a href="../index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Kontakt</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@ansala-siberians.sk">info@ansala-siberians.sk</a></li>
+          <li><a href="https://instagram.com/ansala.siberians" target="_blank">Instagram</a></li>
+          <li>Slovensko</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Ansala Siberians. Všetky práva vyhradené.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+  document.querySelectorAll('.navbar__link').forEach(l => l.addEventListener('click', () => navMenu.classList.remove('open')));
+
+  function togglePedigree(btn) {
+    const panel = btn.nextElementSibling;
+    const isOpen = panel.classList.contains('open');
+    panel.classList.toggle('open', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+    btn.childNodes[2].textContent = isOpen ? ' Zobraziť rodokmeň' : ' Skryť rodokmeň';
+  }
+</script>
+</body>
+</html>

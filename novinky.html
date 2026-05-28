@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novinky — Ansala Siberians</title>
+  <meta name="description" content="Novinky z chovateľskej stanice Ansala Siberians — výstavné úspechy, šteniatka, šport a aktivity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Ansala <span>Siberians</span></a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="o-nas.html"     class="navbar__link">O nás</a></li>
+        <li><a href="nase-psy.html"  class="navbar__link">Naše psy</a></li>
+        <li><a href="steniatka.html" class="navbar__link">Šteniatka</a></li>
+        <li><a href="novinky.html"   class="navbar__link navbar__link--active">Novinky</a></li>
+        <li><a href="index.html#faq"     class="navbar__link">FAQ</a></li>
+        <li><a href="index.html#kontakt" class="navbar__link">Kontakt</a></li>
+        <li class="lang-switcher">
+          <span class="lang-btn active">SK</span>
+          <a href="en/novinky.html" class="lang-btn">EN</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Novinky</span>
+    <h1>Čo sa deje v Ansala</h1>
+    <p class="lead">Výstavné úspechy, narodené šteniatka, športové aktivity a všetko čo sa u nás deje.</p>
+  </div>
+</section>
+
+<!-- ================================================================
+     ZOZNAM ČLÁNKOV
+     Každý článok = jedna .news-card
+     Po napojení Netlify CMS sa toto bude generovať automaticky
+================================================================ -->
+<section class="section section--light">
+  <div class="container">
+
+    <!-- Filter kategórií (voliteľný) -->
+    <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+      <button class="litter-tab active" style="border-radius:100px;">Všetky</button>
+      <button class="litter-tab" style="border-radius:100px;">Výstavy</button>
+      <button class="litter-tab" style="border-radius:100px;">Šteniatka</button>
+      <button class="litter-tab" style="border-radius:100px;">Šport</button>
+    </div>
+
+    <div class="news-grid">
+
+      <!-- ČLÁNOK #1 — skopíruj blok pre každý nový článok -->
+      <a href="novinky/thor-best-in-show.html" class="news-card">
+        <div class="news-card__image">
+          <!-- <img src="images/news-vystavy.jpg" alt="Best in Show" /> -->
+          <div class="news-card__img-placeholder">🏆</div>
+        </div>
+        <div class="news-card__body">
+          <div class="news-card__meta">
+            <span class="news-card__category">Výstavy</span>
+            <span class="news-card__dot"></span>
+            <span class="news-card__date">12. mája 2025</span>
+          </div>
+          <h3>Thor získal titul Best in Show!</h3>
+          <p>Naša hviezda Thor of Ansala Siberians si z medzinárodnej výstavy v Bratislave odniesol prestížny titul Best in Show.</p>
+        </div>
+      </a>
+
+      <!-- ČLÁNOK #2 -->
+      <a href="novinky/vrh-a-2025.html" class="news-card">
+        <div class="news-card__image">
+          <div class="news-card__img-placeholder">🐾</div>
+        </div>
+        <div class="news-card__body">
+          <div class="news-card__meta">
+            <span class="news-card__category">Šteniatka</span>
+            <span class="news-card__dot"></span>
+            <span class="news-card__date">14. apríla 2025</span>
+          </div>
+          <h3>Vrh A — prišlo šesť krásnych šteniat!</h3>
+          <p>Aurora nám 14. apríla darovala šesť zdravých šteniat — troch psíkov a tri sučičky.</p>
+        </div>
+      </a>
+
+      <!-- ČLÁNOK #3 -->
+      <a href="novinky/canicross-2025.html" class="news-card">
+        <div class="news-card__image">
+          <div class="news-card__img-placeholder">🏃</div>
+        </div>
+        <div class="news-card__body">
+          <div class="news-card__meta">
+            <span class="news-card__category">Šport</span>
+            <span class="news-card__dot"></span>
+            <span class="news-card__date">2. marca 2025</span>
+          </div>
+          <h3>Ansala na Canicross majstrovstvách SR</h3>
+          <p>Skvelá atmosféra, nádherná trasa v lese a výkony, na ktoré sme patrične hrdí.</p>
+        </div>
+      </a>
+
+      <!-- SEM PRIDAJ ĎALŠIE ČLÁNKY — skopíruj blok vyššie -->
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Ansala <span>Siberians</span></div>
+        <p class="footer__desc">Profesionálna chovateľská stanica Sibírskeho husky na Slovensku.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/ansala.siberians" target="_blank" class="footer-social__link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://facebook.com/ansala.siberians" target="_blank" class="footer-social__link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Stránky</div>
+        <ul class="footer__links">
+          <li><a href="o-nas.html">O nás</a></li>
+          <li><a href="nase-psy.html">Naše psy</a></li>
+          <li><a href="steniatka.html">Šteniatka</a></li>
+          <li><a href="novinky.html">Novinky</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Kontakt</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@ansala-siberians.sk">info@ansala-siberians.sk</a></li>
+          <li><a href="https://instagram.com/ansala.siberians" target="_blank">Instagram</a></li>
+          <li>Slovensko</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Ansala Siberians. Všetky práva vyhradené.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+  document.querySelectorAll('.navbar__link').forEach(l => l.addEventListener('click', () => navMenu.classList.remove('open')));
+</script>
+</body>
+</html>
