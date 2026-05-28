@@ -30,6 +30,8 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar__inner">
+      <!-- Logo — Možnosť A: text / Option B: uncomment img tag -->
+      <!-- <img src="../images/logo.png" alt="Ansala Siberians" style="height:36px;" /> -->
       <a href="#home" class="navbar__logo">Ansala <span>Siberians</span></a>
 
       <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
@@ -264,6 +266,55 @@
           energetic outdoors, and extraordinarily affectionate at home. 
           She loves children and has become the heart of our breeding programme.
         </p>
+
+        <button class="pedigree-toggle" onclick="togglePedigree(this)">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          View Pedigree
+          <span class="pedigree-toggle__arrow">▾</span>
+        </button>
+
+        <div class="pedigree-panel">
+          <div class="pedigree-tree">
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--self">
+                <span class="pedigree-node__label">Dog</span>
+                <strong>Aurora</strong>
+                <span class="pedigree-node__kennel">of Ansala Siberians</span>
+              </div>
+            </div>
+            <div class="pedigree-connector"></div>
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--sire">
+                <span class="pedigree-node__label">Sire</span>
+                <strong>ICh Blizzard's Arctic Storm</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--dam">
+                <span class="pedigree-node__label">Dam</span>
+                <strong>Ch Luna of Northern Lights</strong>
+              </div>
+            </div>
+            <div class="pedigree-connector"></div>
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Sire's Sire</span>
+                <strong>Ch Arctic Wind's Thunder</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Sire's Dam</span>
+                <strong>Ch Snowfall's Silver Mist</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Dam's Sire</span>
+                <strong>ICh Northern Star's Kodiak</strong>
+              </div>
+              <div class="pedigree-node pedigree-node--grandparent">
+                <span class="pedigree-node__label">Dam's Dam</span>
+                <strong>Ch Crystal Lake's Aurora</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- ===== END DOG PROFILE #1 ===== -->
@@ -765,12 +816,25 @@
     <div class="footer__inner">
 
       <div>
+        <!-- <img src="../images/logo.png" alt="Ansala Siberians" style="height:40px;margin-bottom:0.75rem;" /> -->
         <div class="footer__logo">Ansala <span>Siberians</span></div>
         <p class="footer__desc">
           Professional Siberian Husky kennel in Slovakia. 
           Breeding with emphasis on health, character, and conformation — 
           with love since 2015.
         </p>
+        <div class="footer-social">
+          <a href="https://instagram.com/ansala.siberians" target="_blank" class="footer-social__link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://facebook.com/ansala.siberians" target="_blank" class="footer-social__link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+        </div>
       </div>
 
       <div>
