@@ -1499,11 +1499,8 @@ p { margin-bottom: 1rem; }
 .preview-image {
   border-radius: var(--border-radius-lg);
   overflow: hidden;
-  aspect-ratio: 4/5;
+  aspect-ratio: 4/3;
   background: var(--color-primary-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .preview-image img {
