@@ -333,7 +333,7 @@ p { margin-bottom: 1rem; }
 }
 
 .hero__badge {
-  display: inline-flex;
+  display: none;
   align-items: center;
   gap: 0.5rem;
   background: var(--color-white);
