@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Dogs — Ansala Siberians</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Ansala <span>Siberians</span></a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="o-nas.html"     class="navbar__link">About Us</a></li>
+        <li><a href="nase-psy.html"  class="navbar__link navbar__link--active">Our Dogs</a></li>
+        <li><a href="steniatka.html" class="navbar__link">Puppies</a></li>
+        <li><a href="novinky.html"   class="navbar__link">News</a></li>
+        <li><a href="index.html#faq"     class="navbar__link">FAQ</a></li>
+        <li><a href="index.html#contact" class="navbar__link">Contact</a></li>
+        <li class="lang-switcher">
+          <a href="../nase-psy.html" class="lang-btn">SK</a>
+          <span class="lang-btn active">EN</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Our Dogs</span>
+    <h1>Meet our stars</h1>
+    <p class="lead">Every dog at Ansala has a personality, history, and achievements. Click a profile for full details, pedigree, and photos.</p>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="dogs-preview-grid dogs-preview-grid--full">
+
+      <!-- Add dogs here — copy this block for each new dog -->
+      <a href="psy/aurora.html" class="dog-card">
+        <div class="dog-card__photo">
+          <!-- <img src="../images/aurora.jpg" alt="Aurora" /> -->
+          <div class="dog-card__photo-placeholder">🐕</div>
+        </div>
+        <div class="dog-card__body">
+          <h3 class="dog-card__name">Aurora</h3>
+          <p class="dog-card__kennel">of Ansala Siberians</p>
+          <div class="dog-card__tags">
+            <span class="tag tag--title">JCh SK</span>
+            <span class="tag tag--title">Ch SK</span>
+            <span class="tag tag--title">Ch CZ</span>
+            <span class="tag tag--health">DM: Clear</span>
+            <span class="tag tag--health">HC: Clear</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--color-text-muted);margin:0.75rem 0 0;">Female · Black & White · Born 2020</p>
+          <span class="dog-card__more">View profile →</span>
+        </div>
+      </a>
+
+      <a href="psy/thor.html" class="dog-card">
+        <div class="dog-card__photo">
+          <!-- <img src="../images/thor.jpg" alt="Thor" /> -->
+          <div class="dog-card__photo-placeholder">🐕</div>
+        </div>
+        <div class="dog-card__body">
+          <h3 class="dog-card__name">Thor</h3>
+          <p class="dog-card__kennel">of Ansala Siberians</p>
+          <div class="dog-card__tags">
+            <span class="tag tag--title">ICh</span>
+            <span class="tag tag--title">Ch SK</span>
+            <span class="tag tag--title">Ch PL</span>
+            <span class="tag tag--health">DM: Clear</span>
+            <span class="tag tag--health">OFA: Excellent</span>
+          </div>
+          <p style="font-size:0.88rem;color:var(--color-text-muted);margin:0.75rem 0 0;">Male · Wolf Grey · Born 2018</p>
+          <span class="dog-card__more">View profile →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Ansala <span>Siberians</span></div>
+        <p class="footer__desc">Professional Siberian Husky kennel in Slovakia.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Pages</div>
+        <ul class="footer__links">
+          <li><a href="o-nas.html">About Us</a></li>
+          <li><a href="nase-psy.html">Our Dogs</a></li>
+          <li><a href="steniatka.html">Puppies</a></li>
+          <li><a href="novinky.html">News</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@ansala-siberians.sk">info@ansala-siberians.sk</a></li>
+          <li><a href="https://instagram.com/ansala.siberians" target="_blank">Instagram</a></li>
+          <li>Slovakia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Ansala Siberians. All rights reserved.</span>
+      <a href="../nase-psy.html" style="color:rgba(255,255,255,0.4);font-size:0.8rem;">Prepnúť na Slovenčinu →</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+  document.querySelectorAll('.navbar__link').forEach(l => l.addEventListener('click', () => navMenu.classList.remove('open')));
+</script>
+</body>
+</html>

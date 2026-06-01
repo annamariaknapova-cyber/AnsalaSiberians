@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thor — Ansala Siberians</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../../css/style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo">Ansala <span>Siberians</span></a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="../o-nas.html"     class="navbar__link">About Us</a></li>
+        <li><a href="../nase-psy.html"  class="navbar__link navbar__link--active">Our Dogs</a></li>
+        <li><a href="../steniatka.html" class="navbar__link">Puppies</a></li>
+        <li><a href="../novinky.html"   class="navbar__link">News</a></li>
+        <li><a href="../index.html#faq"     class="navbar__link">FAQ</a></li>
+        <li><a href="../index.html#contact" class="navbar__link">Contact</a></li>
+        <li class="lang-switcher">
+          <a href="../../psy/thor.html" class="lang-btn">SK</a>
+          <span class="lang-btn active">EN</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div style="background:var(--color-white);border-bottom:1px solid var(--color-border);padding:0.75rem 0;">
+  <div class="container" style="font-size:0.82rem;color:var(--color-text-muted);">
+    <a href="../index.html" style="color:var(--color-text-muted);">Home</a> →
+    <a href="../nase-psy.html" style="color:var(--color-text-muted);">Our Dogs</a> →
+    <span style="color:var(--color-text);">Thor</span>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">Our Dogs</span>
+    <h1>Thor</h1>
+    <p class="lead">Thor of Ansala Siberians</p>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="dog-profile">
+      <div class="dog-profile__photo dog-profile__photo--circle">
+        <!-- <img src="../../images/thor.jpg" alt="Thor" /> -->
+        <div class="dog-profile__photo-placeholder">🐕</div>
+      </div>
+      <div class="dog-profile__info">
+        <h3 class="dog-profile__name">Thor</h3>
+        <p class="dog-profile__kennel">Thor of Ansala Siberians</p>
+        <div class="dog-profile__titles">
+          <span class="tag tag--title">JCh SK</span>
+          <span class="tag tag--title">Ch SK</span>
+          <span class="tag tag--title">Ch CZ</span>
+          <span class="tag tag--health">DM: Clear</span>
+          <span class="tag tag--health">HC: Clear</span>
+          <span class="tag tag--health">PRA: Clear</span>
+          <span class="tag tag--health">OFA Hips: Excellent</span>
+        </div>
+        <div class="dog-profile__details">
+          <div class="detail-row"><span class="detail-row__label">Date of Birth</span><span class="detail-row__value">2 July 2018</span></div>
+          <div class="detail-row"><span class="detail-row__label">Sex</span><span class="detail-row__value">Male</span></div>
+          <div class="detail-row"><span class="detail-row__label">Coat Colour</span><span class="detail-row__value">Wolf Grey & White</span></div>
+          <div class="detail-row"><span class="detail-row__label">Eye Colour</span><span class="detail-row__value">Blue</span></div>
+          <div class="detail-row"><span class="detail-row__label">Sire</span><span class="detail-row__value">ICh Kodiak's Northern Dream</span></div>
+          <div class="detail-row"><span class="detail-row__label">Dam</span><span class="detail-row__value">Ch Stargazer's Milky Way</span></div>
+        </div>
+        <h4 style="font-family:var(--font-display);margin:1.5rem 0 0.75rem;">About Thor</h4>
+        <p>Thor is our imposing show dog with a classic nordic look and an exceptionally balanced temperament. Calm at home, tireless in the field. International Champion with results from eight countries.</p>
+
+        <button class="pedigree-toggle" onclick="togglePedigree(this)">
+          🧬 Show Pedigree <span class="pedigree-toggle__arrow">▾</span>
+        </button>
+        <div class="pedigree-panel">
+          <div class="pedigree-tree">
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--self">
+                <span class="pedigree-node__label">Dog</span>
+                <strong>Thor</strong>
+                <span class="pedigree-node__kennel">of Ansala Siberians</span>
+              </div>
+            </div>
+            <div class="pedigree-connector"></div>
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--sire"><span class="pedigree-node__label">Sire</span><strong>ICh Kodiak's Northern Dream</strong></div>
+              <div class="pedigree-node pedigree-node--dam"><span class="pedigree-node__label">Dam</span><strong>Ch Stargazer's Milky Way</strong></div>
+            </div>
+            <div class="pedigree-connector"></div>
+            <div class="pedigree-col">
+              <div class="pedigree-node pedigree-node--grandparent"><span class="pedigree-node__label">Paternal grandsire</span><strong>Ch Arctic Wind's Thunder</strong></div>
+              <div class="pedigree-node pedigree-node--grandparent"><span class="pedigree-node__label">Paternal granddam</span><strong>Ch Snowfall's Silver Mist</strong></div>
+              <div class="pedigree-node pedigree-node--grandparent"><span class="pedigree-node__label">Maternal grandsire</span><strong>ICh Northern Star's Kodiak</strong></div>
+              <div class="pedigree-node pedigree-node--grandparent"><span class="pedigree-node__label">Maternal granddam</span><strong>Ch Crystal Lake's Thor</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:2rem;">
+      <a href="../nase-psy.html" class="btn btn--outline">← Back to all dogs</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div><div class="footer__logo">Ansala <span>Siberians</span></div><p class="footer__desc">Professional Siberian Husky kennel in Slovakia.</p></div>
+      <div>
+        <div class="footer__col-title">Pages</div>
+        <ul class="footer__links">
+          <li><a href="../o-nas.html">About Us</a></li>
+          <li><a href="../nase-psy.html">Our Dogs</a></li>
+          <li><a href="../steniatka.html">Puppies</a></li>
+          <li><a href="../novinky.html">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@ansala-siberians.sk">info@ansala-siberians.sk</a></li>
+          <li><a href="https://instagram.com/ansala.siberians" target="_blank">Instagram</a></li>
+          <li>Slovakia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Ansala Siberians. All rights reserved.</span>
+      <a href="../../psy/thor.html" style="color:rgba(255,255,255,0.4);font-size:0.8rem;">Prepnúť na Slovenčinu →</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+  document.querySelectorAll('.navbar__link').forEach(l => l.addEventListener('click', () => navMenu.classList.remove('open')));
+  function togglePedigree(btn) {
+    const panel = btn.nextElementSibling;
+    const isOpen = panel.classList.contains('open');
+    panel.classList.toggle('open', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+    btn.childNodes[2].textContent = isOpen ? ' Show Pedigree' : ' Hide Pedigree';
+  }
+</script>
+</body>
+</html>

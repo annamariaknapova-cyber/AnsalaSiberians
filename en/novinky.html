@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News — Ansala Siberians</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<nav class="navbar">
+  <div class="container">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">Ansala <span>Siberians</span></a>
+      <button class="navbar__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="navbar__menu" id="navMenu">
+        <li><a href="o-nas.html"     class="navbar__link">About Us</a></li>
+        <li><a href="nase-psy.html"  class="navbar__link">Our Dogs</a></li>
+        <li><a href="steniatka.html" class="navbar__link">Puppies</a></li>
+        <li><a href="novinky.html"   class="navbar__link navbar__link--active">News</a></li>
+        <li><a href="index.html#faq"     class="navbar__link">FAQ</a></li>
+        <li><a href="index.html#contact" class="navbar__link">Contact</a></li>
+        <li class="lang-switcher">
+          <a href="../novinky.html" class="lang-btn">SK</a>
+          <span class="lang-btn active">EN</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="section-label">News</span>
+    <h1>What's happening at Ansala</h1>
+    <p class="lead">Show achievements, new puppies, sporting activities, and everything happening at our kennel.</p>
+  </div>
+</section>
+
+<section class="section section--light">
+  <div class="container">
+    <div class="news-grid">
+
+      <a href="novinky/thor-best-in-show.html" class="news-card">
+        <div class="news-card__image"><div class="news-card__img-placeholder">🏆</div></div>
+        <div class="news-card__body">
+          <div class="news-card__meta">
+            <span class="news-card__category">Shows</span>
+            <span class="news-card__dot"></span>
+            <span class="news-card__date">12 May 2025</span>
+          </div>
+          <h3>Thor wins Best in Show!</h3>
+          <p>Our star Thor of Ansala Siberians took home the prestigious Best in Show title at the International Show in Bratislava.</p>
+        </div>
+      </a>
+
+      <a href="novinky/vrh-a-2025.html" class="news-card">
+        <div class="news-card__image"><div class="news-card__img-placeholder">🐾</div></div>
+        <div class="news-card__body">
+          <div class="news-card__meta">
+            <span class="news-card__category">Puppies</span>
+            <span class="news-card__dot"></span>
+            <span class="news-card__date">14 April 2025</span>
+          </div>
+          <h3>Litter A — six beautiful puppies!</h3>
+          <p>Aurora gave us six healthy puppies on 14 April — three males and three females. All born without complications.</p>
+        </div>
+      </a>
+
+      <a href="novinky/canicross-2025.html" class="news-card">
+        <div class="news-card__image"><div class="news-card__img-placeholder">🏃</div></div>
+        <div class="news-card__body">
+          <div class="news-card__meta">
+            <span class="news-card__category">Sport</span>
+            <span class="news-card__dot"></span>
+            <span class="news-card__date">2 March 2025</span>
+          </div>
+          <h3>Ansala at the Slovak Canicross Championships</h3>
+          <p>Fantastic atmosphere, a beautiful forest course, and performances we're rightfully proud of.</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__logo">Ansala <span>Siberians</span></div>
+        <p class="footer__desc">Professional Siberian Husky kennel in Slovakia.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">Pages</div>
+        <ul class="footer__links">
+          <li><a href="o-nas.html">About Us</a></li>
+          <li><a href="nase-psy.html">Our Dogs</a></li>
+          <li><a href="steniatka.html">Puppies</a></li>
+          <li><a href="novinky.html">News</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <ul class="footer__links">
+          <li><a href="mailto:info@ansala-siberians.sk">info@ansala-siberians.sk</a></li>
+          <li><a href="https://instagram.com/ansala.siberians" target="_blank">Instagram</a></li>
+          <li>Slovakia</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 Ansala Siberians. All rights reserved.</span>
+      <a href="../novinky.html" style="color:rgba(255,255,255,0.4);font-size:0.8rem;">Prepnúť na Slovenčinu →</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('navMenu');
+  hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
+  document.querySelectorAll('.navbar__link').forEach(l => l.addEventListener('click', () => navMenu.classList.remove('open')));
+</script>
+</body>
+</html>
