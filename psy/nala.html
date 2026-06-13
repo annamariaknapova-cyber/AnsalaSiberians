@@ -135,7 +135,46 @@
           ale aj výborným exteriérom. Pre jej drive a krásu sa nestratí ani na výstavách 
           ani v športe, prináša nám radosť po každej stránke života.
         </p>
+<!-- GALÉRIA — vlož pred Výstavné výsledky -->
+<div class="dog-gallery">
 
+  <!-- Hlavný carousel -->
+  <div class="dog-gallery__carousel">
+    <button class="dog-gallery__arrow dog-gallery__arrow--prev" onclick="galleryPrev()" aria-label="Predchádzajúca">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+
+    <div class="dog-gallery__track-wrap">
+      <div class="dog-gallery__track" id="galleryTrack">
+
+        <!-- FOTKY — pridávaj <div class="dog-gallery__slide"> bloky -->
+        <div class="dog-gallery__slide">
+          <img src="../images/playfulNala.jpg" alt="Nala" />
+        </div>
+        <div class="dog-gallery__slide">
+          <img src="../images/nala2.jpg" alt="Nala" />
+          <!-- Premenuj svoju fotku na nala2.jpg a nahráš do images/ -->
+        </div>
+        <div class="dog-gallery__slide">
+          <img src="../images/nala3.jpg" alt="Nala" />
+        </div>
+        <div class="dog-gallery__slide">
+          <img src="../images/nala4.jpg" alt="Nala" />
+        </div>
+        <!-- Pridaj ďalšie slidy sem -->
+
+      </div>
+    </div>
+
+    <button class="dog-gallery__arrow dog-gallery__arrow--next" onclick="galleryNext()" aria-label="Nasledujúca">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <!-- Bodky navigácie -->
+  <div class="dog-gallery__dots" id="galleryDots"></div>
+
+</div>
         <!-- Výstavné výsledky -->
         <h3>Výstavné výsledky</h3>
         <ul style="color:var(--color-text-muted);font-size:0.95rem;line-height:2;">
