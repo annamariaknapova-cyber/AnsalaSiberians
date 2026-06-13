@@ -328,6 +328,47 @@
     btn.classList.toggle('open', !isOpen);
     btn.firstChild.textContent = isOpen ? '🧬 Zobraziť rodokmeň' : '🧬 Skryť rodokmeň';
   }
+// ── Galéria carousel ─────────────────────────────────────
+(function() {
+  const VISIBLE = window.innerWidth > 600 ? 2 : 1;
+  const track = document.getElementById('galleryTrack');
+  const dotsEl = document.getElementById('galleryDots');
+  if (!track) return;
+
+  const slides = track.querySelectorAll('.dog-gallery__slide');
+  const total = slides.length;
+  const steps = Math.ceil(total / VISIBLE);
+  let current = 0;
+
+  // Vytvor bodky
+  for (let i = 0; i < steps; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'dog-gallery__dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Slide ' + (i+1));
+    dot.onclick = () => goTo(i);
+    dotsEl.appendChild(dot);
+  }
+
+  function goTo(idx) {
+    current = (idx + steps) % steps;
+    const slideW = slides[0].offsetWidth + 16; // šírka + gap
+    track.style.transform = `translateX(-${current * VISIBLE * slideW}px)`;
+    dotsEl.querySelectorAll('.dog-gallery__dot').forEach((d, i) =>
+      d.classList.toggle('active', i === current)
+    );
+  }
+
+  window.galleryNext = () => goTo(current + 1);
+  window.galleryPrev = () => goTo(current - 1);
+
+  // Swipe na mobile
+  let startX = 0;
+  track.addEventListener('touchstart', e => startX = e.touches[0].clientX, { passive: true });
+  track.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) diff > 0 ? galleryNext() : galleryPrev();
+  });
+})();
 </script>
 </body>
 </html>
